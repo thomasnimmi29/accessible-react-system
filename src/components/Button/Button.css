@@ -1,0 +1,52 @@
+.ars-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 44px;
+  padding: var(--space-2) var(--space-4);
+
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+
+  font-weight: var(--font-weight-semibold);
+
+  cursor: pointer;
+}
+
+.ars-button--primary {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.ars-button--primary:hover:not(:disabled) {
+  background: var(--color-primary-hover);
+}
+
+.ars-button--primary:active:not(:disabled) {
+  background: var(--color-primary-active);
+}
+
+.ars-button--secondary {
+  background: var(--color-background);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.ars-button--secondary:hover:not(:disabled) {
+  background: var(--color-surface);
+}
+
+.ars-button--danger {
+  background: var(--color-danger);
+  color: var(--color-text-inverse);
+}
+
+.ars-button--danger:hover:not(:disabled) {
+  background: var(--color-danger-hover);
+}
+
+.ars-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
