@@ -1,0 +1,29 @@
+.ars-alert {
+  padding: var(--space-4);
+  border: 1px solid;
+  border-radius: var(--radius-md);
+
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+}
+
+.ars-alert--info {
+  background: var(--color-surface);
+  border-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.ars-alert--success {
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+
+.ars-alert--warning {
+  border-color: var(--color-warning);
+  color: var(--color-text);
+}
+
+.ars-alert--error {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
