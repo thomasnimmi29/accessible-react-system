@@ -1,0 +1,63 @@
+.ars-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--space-4);
+
+  background: rgb(0 0 0 / 0.55);
+}
+
+.ars-dialog {
+  width: min(100%, 32rem);
+
+  padding: var(--space-6);
+
+  border-radius: var(--radius-lg);
+
+  background: var(--color-background);
+  color: var(--color-text);
+
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 0.25);
+}
+
+.ars-dialog__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.ars-dialog__title {
+  margin: 0;
+
+  font-size: 1.25rem;
+}
+
+.ars-dialog__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.75rem;
+  height: 2.75rem;
+
+  border: 0;
+  border-radius: var(--radius-md);
+
+  background: transparent;
+  color: var(--color-text);
+
+  cursor: pointer;
+}
+
+.ars-dialog__close:hover {
+  background: var(--color-surface);
+}
+
+.ars-dialog__content {
+  margin-top: var(--space-4);
+}
